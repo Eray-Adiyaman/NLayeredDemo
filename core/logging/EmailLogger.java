@@ -1,4 +1,10 @@
 package core.logging;
 
-public class EmailLogger {
+import core.logging.abstracts.Logger;
+
+public class EmailLogger implements Logger {
+    @Override
+    public void log(String data) {
+        System.out.println("Logged to Email " + data);
+    }
 }
