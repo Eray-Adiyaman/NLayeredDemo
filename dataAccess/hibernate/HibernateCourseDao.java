@@ -19,9 +19,8 @@ public class HibernateCourseDao implements CourseDao {
 
     @Override
     public boolean isExist(String courseName){
-        ArrayList<Course> courses = getCourses();
-        if (!courses.isEmpty()){
-            for (Course course: courses){
+        if (!courseList.isEmpty()){
+            for (Course course: courseList){
                 if(course.getCourseName().equals(courseName)){
                     return true;
                 }

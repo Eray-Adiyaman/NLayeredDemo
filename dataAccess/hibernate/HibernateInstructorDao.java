@@ -19,9 +19,8 @@ public class HibernateInstructorDao implements InstructorDao {
 
     @Override
     public boolean isExist(int id) {
-        ArrayList<Instructor> instructors = getInstructors();
-       if(!instructors.isEmpty()){
-           for (Instructor instructor : instructors){
+       if(!instructorsList.isEmpty()){
+           for (Instructor instructor : instructorsList){
                if(instructor.getId() == id){
                    return true;
                }

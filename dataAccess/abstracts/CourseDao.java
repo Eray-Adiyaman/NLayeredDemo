@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 public interface CourseDao {
 
-    public static ArrayList<Course> courseList = new ArrayList<>();
-    public void add(Course course);
-    public ArrayList<Course> getCourses();
-    public boolean isExist(String courseName);
+     ArrayList<Course> courseList = new ArrayList<>();
+     void add(Course course);
+     ArrayList<Course> getCourses();
+     boolean isExist(String courseName);
 
 }

@@ -6,13 +6,13 @@ import java.util.ArrayList;
 
 public interface InstructorDao {
 
-    public static ArrayList<Instructor> instructorsList = new ArrayList<>();
+    ArrayList<Instructor> instructorsList = new ArrayList<>();
 
-    public void add(Instructor instructor);
+    void add(Instructor instructor);
 
-    public ArrayList<Instructor> getInstructors();
+     ArrayList<Instructor> getInstructors();
 
-    public boolean isExist(int id);
+     boolean isExist(int id);
 
 
 }
